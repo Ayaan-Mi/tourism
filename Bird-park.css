@@ -22,40 +22,6 @@ nav img.logo {
     height: 40px;
 }
 
-.sukhna {
-    padding: 20px;
-    text-align: center;
-}
-
-.sukhna h2 {
-    margin-bottom: 20px;
-    color: #005f73;
-}
-
-.boating-info h2 {
-    color: #005f73;
-}
-
-.lake-images {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.lake-images img {
-    width: 330px;
-    height: 330px;
-    object-fit: cover;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.lake-images img:hover {
-    transform: scale(1.1);
-    border-color: #aaa;
-}
-
 .dropdown {
     position: relative;
 }
@@ -95,19 +61,38 @@ nav img.logo {
     display: block;
 }
 
-.lake-info {
+.bird {
+    padding: 20px;
+    text-align: center;
+}
+
+.bird h2 {
+    margin-bottom: 20px;
+    color: #005f73;
+}
+
+.bird-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bird-images img {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.bird-images img:hover {
+    transform: scale(1.1);
+    border-color: #aaa;
+}
+
+.bird-info {
     margin-top: 20px;
     text-align: left;
     color: #1a3e6e;
-}
-
-.boating-photo {
-    float: right;
-    width: 250px;
-    height: 250px;
-    margin-right: 20px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: transform 0.3s;
 }
