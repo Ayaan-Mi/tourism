@@ -34,7 +34,7 @@ nav img.logo {
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 992px;
+    min-width: 200px; /* Adjusted width for a single column */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -52,13 +52,13 @@ nav img.logo {
 }
 
 .dropdown-photo {
-    width: 200px;
-    height: 120px;
+    width: 100px; /* Adjusted photo width */
+    height: 60px;
     margin-right: 10px;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: block; /* Show dropdown on hover */
 }
 
 .bird {
@@ -95,4 +95,15 @@ nav img.logo {
     margin-top: 20px;
     text-align: left;
     color: #1a3e6e;
+}
+
+.bird-photo {
+    float: left;
+    width: 500px;
+    height: 500px;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
 }

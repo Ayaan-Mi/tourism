@@ -34,7 +34,7 @@ nav img.logo {
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 992px;
+    min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -52,14 +52,15 @@ nav img.logo {
 }
 
 .dropdown-photo {
-    width: 200px;
-    height: 120px;
+    width: 100px;
+    height: 60px;
     margin-right: 10px;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 
 .places-images {
     padding: 10px;
@@ -68,7 +69,31 @@ nav img.logo {
 }
 
 .places-images img {
-    width: 200px;
-    height: 230px;
+    width: 180px;
+    height: 200px;
     border-radius: 10px;
+}
+
+.chandigarh {
+    padding: 20px;
+    text-align: center;
+}
+
+.chandigarh-images {
+    display: flex;
+    justify-content: center;
+}
+
+.chandigarh-images img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.chandigarh-images img:hover {
+    transform: scale(1.1);
+    border-color: #aaa;
 }
