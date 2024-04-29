@@ -1,25 +1,30 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
 }
 
 nav {
     display: flex;
     align-items: center;
-    padding: 10px;
-    background-color: #f0f0f0;
+    background-color: #3b5998;
+    color: #fff;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
-    margin: 0 15px;
+    color: white;
+    margin: 0 20px;
+    transition: color 0.3s;
 }
 
-nav img.logo {
-    height: 40px;
+nav a:hover {
+    color: #ffa07a;
+}
+
+.logo {
+    height: 100px;
 }
 
 .dropdown {
@@ -35,14 +40,13 @@ nav img.logo {
     position: absolute;
     background-color: white;
     min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 12px;
-    text-decoration: none;
+    padding: 10px;
     display: flex;
     align-items: center;
 }
@@ -51,49 +55,75 @@ nav img.logo {
     background-color: #f0f0f0;
 }
 
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: opacity 0.3s;
+}
+
 .dropdown-photo {
     width: 100px;
     height: 60px;
     margin-right: 10px;
 }
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
 .places-images {
-    padding: 10px;
-    border: 2px solid #ccc;
-    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.places-images img {
-    width: 180px;
+.place {
+    text-align: center;
+}
+
+.place img {
+    width: 200px;
     height: 200px;
     border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.place img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.place p {
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .chandigarh {
     padding: 20px;
-    text-align: center;
+    text-align: left;
+    line-height: 1.6;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 40px;
+    border-radius: 10px;
+}
+
+.chandigarh h2 {
+    color: #3b5998;
 }
 
 .chandigarh-images {
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
-.chandigarh-images img {
-    width: 600px;
-    height: 600px;
-    object-fit: cover;
-    border: 2px solid #ddd;
+.hero-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 3px solid #ddd;
     border-radius: 10px;
     transition: transform 0.3s;
 }
 
-.chandigarh-images img:hover {
-    transform: scale(1.1);
+.hero-image:hover {
+    transform: scale(1.05);
     border-color: #aaa;
 }
