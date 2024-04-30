@@ -129,29 +129,29 @@ nav a:hover {
 
 table {
     width: 50%;
-    border-collapse: collapse; /* No space between borders */
+    border-collapse: collapse;
     margin-top: 10px;
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
-    border: 1px solid #ddd; /* Border for table cells */
+    border: 1px solid #ddd;
     text-align: left;
-    padding: 10px; /* Padding within cells */
+    padding: 10px;
 }
 
 th {
-    background-color: #3b5998; /* Consistent with navigation */
-    color: white; /* White text for contrast */
+    background-color: #3b5998;
+    color: white;
 }
 
 tr:nth-child(even) {
-    background-color: #f0f0f0; /* Alternating row color for readability */
+    background-color: #f0f0f0;
 }
 
 tr:hover {
-    background-color: #ffa07a; /* Hover effect on rows */
+    background-color: #ffa07a;
 }
 .map-container {
     display: flex;

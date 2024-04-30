@@ -103,6 +103,17 @@ nav a:hover {
     margin-top: 20px;
 }
 
+.bird {
+    padding: 20px;
+    text-align: left;
+    line-height: 1.6;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 40px;
+    border-radius: 10px;
+}
+
+
 table {
     border-collapse: collapse;
     background-color: white;
@@ -138,16 +149,6 @@ tr:hover {
     flex: 1;
     max-width: 45%;
     margin: 0 10px;
-}
-
-.bird {
-    padding: 20px;
-    text-align: left;
-    line-height: 1.6;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-    margin: 20px 40px;
-    border-radius: 10px;
 }
 
 .map-container {

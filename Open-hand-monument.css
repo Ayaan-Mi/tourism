@@ -74,6 +74,16 @@ nav a:hover {
     margin: 20px;
 }
 
+.hand{
+    padding: 20px;
+    text-align: left;
+    line-height: 1.6;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 40px;
+    border-radius: 10px;
+}
+
 .hand h2 {
     color: #3b5998;
 }
@@ -101,16 +111,6 @@ nav a:hover {
     text-align: left;
     color: #333;
     margin-top: 20px;
-}
-
-.hand{
-    padding: 20px;
-    text-align: left;
-    line-height: 1.6;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-    margin: 20px 40px;
-    border-radius: 10px;
 }
 
 .map-container {
