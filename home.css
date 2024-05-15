@@ -69,6 +69,9 @@ nav a:hover {
 }
 
 .places-images {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -77,11 +80,19 @@ nav a:hover {
     border-radius: 10px;
 }
 
+.marquee2 {
+    display: inline-flex;
+    animation: marquee 15s linear infinite;
+}
+
 .place {
+    display: inline-block;
+    margin: 0 10px;
     text-align: center;
 }
 
 .place img {
+    object-fit: cover;
     width: 200px;
     height: 200px;
     border-radius: 10px;
@@ -100,6 +111,15 @@ nav a:hover {
     font-size: 16px;
 }
 
+@keyframes marquee {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
 .chandigarh {
     padding: 20px;
     text-align: left;
@@ -110,10 +130,16 @@ nav a:hover {
     border-radius: 10px;
 }
 
-.chandigarh h2 {
+.marquee{
     color: #3b5998;
     font-size: 24px;
     font-weight: bold;
+    animation: blinker 1.4s linear infinite;
+}
+@keyframes blinker {
+    90% {
+        opacity: 0;
+    }
 }
 
 .chandigarh p {
@@ -130,7 +156,7 @@ nav a:hover {
     margin: 20px;
 }
 
-.hero-image {
+.chd-image {
     width: 100%;
     max-width: 480px;
     height: auto;
@@ -139,7 +165,7 @@ nav a:hover {
     transition: transform 0.3s;
 }
 
-.hero-image:hover {
+.chd-image:hover {
     transform: scale(1.03);
     border-color: #aaa;
 }
