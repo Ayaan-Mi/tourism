@@ -80,11 +80,6 @@ nav a:hover {
     border-radius: 10px;
 }
 
-.marquee2 {
-    display: inline-flex;
-    animation: marquee 15s linear infinite;
-}
-
 .place {
     display: inline-block;
     margin: 0 10px;
@@ -111,15 +106,6 @@ nav a:hover {
     font-size: 16px;
 }
 
-@keyframes marquee {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(100%);
-    }
-}
-
 .chandigarh {
     padding: 20px;
     text-align: left;
@@ -130,12 +116,13 @@ nav a:hover {
     border-radius: 10px;
 }
 
-.marquee{
+.marquee {
     color: #3b5998;
     font-size: 24px;
     font-weight: bold;
     animation: blinker 1.4s linear infinite;
 }
+
 @keyframes blinker {
     90% {
         opacity: 0;

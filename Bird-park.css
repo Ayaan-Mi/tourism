@@ -91,6 +91,33 @@ nav a:hover {
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s;
+    animation-duration: 3s;
+}
+
+@keyframes Left{
+    0%{
+        transform: translate(-150%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+
+@keyframes Right{
+    0%{
+        transform: translate(150%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+
+.bird-images img:first-child{
+    animation-name: Left;
+}
+
+.bird-images img:last-child{
+    animation-name: Right;
 }
 
 .bird-images img:hover {
@@ -120,7 +147,8 @@ table {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ddd;
     text-align: left;
     padding: 10px;
