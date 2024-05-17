@@ -200,3 +200,84 @@ tr:hover {
     justify-content: center;
     padding: 20px;
 }
+
+@media (max-width: 480px) {
+    .bird {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+     .bird h2 {
+        font-size: 18px;
+     }
+
+    .bird-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .bird-images img {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .bird-images img:first-child{
+        animation-name: Left;
+    }
+    .bird-images img:nth-child(2) {
+        animation-name: Right;
+    }
+    
+    .bird-images img:nth-child(3) {
+        animation-name: Bottom;
+    }
+    
+    .bird-images img:hover {
+        transform: scale(1.05);
+    }
+
+    .marq {
+        font-size: 14px;
+        line-height: 1.5;
+        width: 280px;
+    }
+
+    .bird-info{
+        width: 280px;;
+    }
+    .bird-info h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .bird-info ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .bird-info ul li p {
+        font-size: 14px;
+    }
+
+    .tables-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        max-width: 350px;
+        height: 350px;
+    }
+}

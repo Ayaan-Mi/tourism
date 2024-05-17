@@ -141,9 +141,13 @@ nav a:hover {
 }
 
 .lake-info {
+    padding: 20px;
     text-align: left;
-    color: #333;
-    margin-top: 20px;
+    line-height: 1.6;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 40px;
+    border-radius: 10px;
 }
 
 .lake {
@@ -202,4 +206,86 @@ tr:hover {
     display: flex;
     justify-content: center;
     padding: 20px;
+}
+
+
+
+@media (max-width: 480px) {
+    .sukhna {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+     .sukhna h2 {
+        font-size: 18px;
+     }
+
+    .lake-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .lake-images img {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .marq {
+        font-size: 14px;
+        line-height: 1.5;
+        width: 300px;
+    }
+
+    .lake-info{
+        width: 300px;;
+    }
+    .lake-info h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .lake-info ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .lake-info ul li p {
+        font-size: 14px;
+    }
+
+    .boating-photo {
+        width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .map-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        max-width: 350px;
+        height: 350px;
+    }
 }

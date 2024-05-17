@@ -156,3 +156,46 @@ nav a:hover {
     transform: scale(1.03);
     border-color: #aaa;
 }
+
+
+
+
+@media (max-width: 480px) {
+    .places-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .place {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .place img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .place p {
+        color: #333;
+        font-weight: bold;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .chandigarh {
+        height: 500px;
+    }
+    
+    .chandigarh h2{
+        font-size: 85%
+    }
+
+    .marq{
+        height: 425px;
+    }
+}
