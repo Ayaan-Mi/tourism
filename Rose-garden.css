@@ -76,6 +76,22 @@ nav a:hover {
 
 .rose h2 {
     color: #3b5998;
+    text-align: center;
+    animation-duration: 3s;
+
+}
+
+@keyframes Rose{
+    0%{
+        transform: translate(150%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+
+.rose h2:first-child{
+    animation-name: Rose;
 }
 
 .rose-images {
@@ -91,8 +107,35 @@ nav a:hover {
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s;
+    animation-duration: 3s;
 }
 
+
+@keyframes Left {
+    0% {
+        transform: translate(-150%);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes Right {
+    0% {
+        transform: translate(150%);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.rose-images img:first-child{
+    animation-name: Left;
+}
+
+.rose-images img:last-child{
+    animation-name: Right;
+}
 .rose-images img:hover {
     transform: scale(1.05);
 }

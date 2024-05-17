@@ -76,7 +76,23 @@ nav a:hover {
 
 .bird h2 {
     color: #3b5998;
+    text-align: center;
+    animation-duration: 3s;
 }
+
+@keyframes Bird{
+    0%{
+        transform: translate(150%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+
+.bird h2:first-child{
+    animation-name: Bird;
+}
+
 
 .bird-images {
     display: flex;

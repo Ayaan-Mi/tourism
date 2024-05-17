@@ -120,7 +120,7 @@ nav a:hover {
     color: #3b5998;
     font-size: 24px;
     font-weight: bold;
-    animation: blinker 1.4s linear infinite;
+    animation: blinker 2s linear infinite;
 }
 
 @keyframes blinker {
