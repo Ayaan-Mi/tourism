@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable HTML Arrows</title>
+    <style>
+        .arrow {
+            cursor: pointer;
+            font-size: 24px;
+            margin: 10px;
+        }
+
+        .image{
+            width: 200px;
+            height: 200px;
+        }
+
+        .content{
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p class="arrow" id="left-arrow">&larr; Left Arrow</p> -->
+    <p class="arrow" id="up-arrow">&uarr; Up Arrow</p>
+    <!-- <p class="arrow" id="right-arrow">&rarr; Right Arrow</p> -->
+    <p class="arrow" id="down-arrow">&darr; Down Arrow</p>
+<!-- 
+    <img src="" alt="" class="image" id="output"> -->
+    <div class="content">
+        <p>Scroll down to see more content.</p>
+    </div>
+
+    <script>
+        document.getElementById('up-arrow').addEventListener('click', function() {
+            window.scrollBy(0, -100); // Scrolls up by 100 pixels
+        });
+
+        document.getElementById('down-arrow').addEventListener('click', function() {
+            window.scrollBy(0, 100); // Scrolls down by 100 pixels
+        });
+        // document.getElementById('right-arrow').addEventListener('click', function() {
+        //     document.getElementById('output').src = '/photos/hand-1.jpg';
+        // });
+
+        // document.getElementById('down-arrow').addEventListener('click', function() {
+        //     document.getElementById('output').src = '/photos/rose-1.jpg';
+        // });
+    </script>
+
+</body>
+</html>
