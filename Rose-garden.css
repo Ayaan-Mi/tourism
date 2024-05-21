@@ -10,6 +10,7 @@ nav {
     align-items: center;
     background-color: #3b5998;
     color: #fff;
+    padding: 10px;
 }
 
 nav a {
@@ -78,19 +79,19 @@ nav a:hover {
     color: #3b5998;
     text-align: center;
     animation-duration: 3s;
-
 }
 
-@keyframes Rose{
-    0%{
+@keyframes Rose {
+    0% {
         transform: translate(150%);
     }
-    100%{
+
+    100% {
         transform: translate(0%);
     }
 }
 
-.rose h2:first-child{
+.rose h2:first-child {
     animation-name: Rose;
 }
 
@@ -110,11 +111,11 @@ nav a:hover {
     animation-duration: 3s;
 }
 
-
 @keyframes Left {
     0% {
         transform: translate(-150%);
     }
+
     100% {
         transform: translate(0);
     }
@@ -124,18 +125,20 @@ nav a:hover {
     0% {
         transform: translate(150%);
     }
+
     100% {
         transform: translate(0);
     }
 }
 
-.rose-images img:first-child{
+.rose-images img:first-child {
     animation-name: Left;
 }
 
-.rose-images img:last-child{
+.rose-images img:last-child {
     animation-name: Right;
 }
+
 .rose-images img:hover {
     transform: scale(1.05);
 }
@@ -162,7 +165,6 @@ nav a:hover {
     padding: 20px;
 }
 
-
 @media (max-width: 480px) {
     .rose {
         display: flex;
@@ -171,9 +173,9 @@ nav a:hover {
         padding: 10px;
     }
 
-     .rose h2 {
+    .rose h2 {
         font-size: 18px;
-     }
+    }
 
     .rose-images {
         display: flex;
@@ -188,30 +190,22 @@ nav a:hover {
         margin-bottom: 10px;
     }
 
-    .rose-images img:first-child{
+    .rose-images img:first-child {
         animation-name: Left;
     }
+
     .rose-images img:nth-child(2) {
         animation-name: Right;
     }
-    
-    .rose-images img:nth-child(3) {
-        animation-name: Bottom;
-    }
-    
+
     .rose-images img:hover {
         transform: scale(1.05);
     }
 
-    .marq {
-        font-size: 14px;
-        line-height: 1.5;
+    .rose-info {
         width: 280px;
     }
 
-    .rose-info{
-        width: 280px;;
-    }
     .rose-info h2 {
         font-size: 18px;
         margin-bottom: 10px;
@@ -226,7 +220,7 @@ nav a:hover {
         font-size: 14px;
     }
 
-    .tables-container{
+    .tables-container {
         display: flex;
         flex-direction: column;
     }

@@ -2,7 +2,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #e0f7fa;
+    background-color: #ffffff; 
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3b5998;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -25,7 +33,7 @@ nav a:hover {
 }
 
 .logo {
-    height: 60px;
+    height: 100px;
 }
 
 .dropdown {
@@ -39,10 +47,9 @@ nav a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
-    min-width: 200px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease;
 }
 
 .dropdown-content a {
@@ -51,39 +58,42 @@ nav a:hover {
     display: flex;
     align-items: center;
     text-decoration: none;
+    width: 200px;
 }
 
 .dropdown-content a:hover {
-    background-color: #f0f0f0;
+    background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-    transition: opacity 0.3s;
+    opacity: 1;
 }
 
 .dropdown-photo {
-    width: 100px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
+    border-radius: 50%;
 }
 
 .places-images {
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
     background-color: #fafafa;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    margin: 20px;
 }
 
 .place {
-    display: inline-block;
-    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    margin: 10px;
 }
 
 .place img {
@@ -95,23 +105,22 @@ nav a:hover {
 }
 
 .place img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .place p {
     margin-top: 10px;
-    color: #333;
+    color: #333333;
     font-weight: bold;
     font-size: 16px;
 }
 
 .chandigarh {
     padding: 20px;
-    text-align: left;
     line-height: 1.6;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 20px;
     border-radius: 10px;
 }
@@ -120,17 +129,10 @@ nav a:hover {
     color: #3b5998;
     font-size: 24px;
     font-weight: bold;
-    animation: blinker 2s linear infinite;
-}
-
-@keyframes blinker {
-    90% {
-        opacity: 0;
-    }
 }
 
 .chandigarh p {
-    color: #555;
+    color: #333333;
 }
 
 .chandigarh-images {
@@ -157,64 +159,41 @@ nav a:hover {
     border-color: #aaa;
 }
 
-.scroll {
-    position: relative;
-    height: 100vh;
-    background: url('/photos/chandigarh-2.png') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-.container {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-}
-.arrow {
-    cursor: pointer;
-    font-size: 24px;
-    margin-top: 20px;
-}
-
 @media (max-width: 480px) {
     .places-images {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 290px;
+        margin: 50px auto 0;
     }
-
-    .place {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-        width: 80%;
-    }
+    
 
     .place img {
-        width: 300px;
-        height: 150px;
+        width: 250px;
+        height: 120px;
     }
 
     .place p {
-        color: #333;
-        font-weight: bold;
-        font-size: 13px;
-        text-align: center;
+        font-size: 14px;
     }
 
-    .chandigarh {
-        height: 500px;
+    .chandigarh{
+        height: 400px;
+        width: 290px;
+        margin: 50px auto 0;
     }
-    
-    .chandigarh h2{
-        font-size: 85%
+    .chandigarh h2 {
+        font-size: 18px;
     }
 
     .marq{
-        height: 425px;
+        height: 330px;
+    }
+
+    .chandigarh-images{
+        width: 290px;
+        margin: 50px auto 0;
+        margin-bottom: 50px;
     }
 }

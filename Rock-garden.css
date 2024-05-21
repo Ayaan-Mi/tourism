@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #f9f9f9;
+    color: #333;
 }
 
 nav {
@@ -10,6 +11,7 @@ nav {
     align-items: center;
     background-color: #3b5998;
     color: #fff;
+    padding: 10px;
 }
 
 nav a {
@@ -68,10 +70,12 @@ nav a:hover {
 
 .rock {
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    line-height: 1.6;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px 40px;
     border-radius: 10px;
-    margin: 20px;
 }
 
 .rock h2 {
@@ -80,19 +84,19 @@ nav a:hover {
     animation-duration: 3s;
 }
 
-@keyframes Rock{
-    0%{
+@keyframes rock {
+    0% {
         transform: translate(150%);
     }
-    100%{
+
+    100% {
         transform: translate(0%);
     }
 }
 
-.rock h2:first-child{
-    animation-name: Rock;
+.rock h2:first-child {
+    animation-name: rock;
 }
-
 .rock-images {
     display: flex;
     justify-content: center;
@@ -109,56 +113,14 @@ nav a:hover {
     animation-duration: 3s;
 }
 
-@keyframes Left {
-    0%{
-        transform: translate(-150%);
-    }
-    100%{
-        transform: translate(0%);
-    }
-}
-
-@keyframes Right {
-    0%{
-        transform: translate(150%);
-    }
-    100%{
-        transform: translate(0%);
-    }
-}
-
-@keyframes Bottom {
-    0% {
-        transform: translateY(200%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
-}
-
-.rock-images img:first-child{
-    animation-name: Left;
-}
-.rock-images img:nth-child(3) {
-    animation-name: Right;
-}
-
-.rock-images img:nth-child(2) {
-    animation-name: Bottom;
-}
-
 .rock-images img:hover {
     transform: scale(1.05);
 }
 
 .rock-info {
-    padding: 20px;
     text-align: left;
-    line-height: 1.6;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-    margin: 20px 40px;
-    border-radius: 10px;
+    color: #333;
+    margin-top: 20px;
 }
 
 .rock {
@@ -172,8 +134,10 @@ nav a:hover {
 }
 
 table {
+    width: 50%;
     border-collapse: collapse;
-    background-color: white;
+    margin-top: 10px;
+    background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -197,19 +161,6 @@ tr:hover {
     background-color: #ffa07a;
 }
 
-.tables-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.table-wrapper {
-    flex: 1;
-    max-width: 45%;
-    margin: 0 10px;
-}
-
-
 .map-container {
     display: flex;
     justify-content: center;
@@ -224,9 +175,9 @@ tr:hover {
         padding: 10px;
     }
 
-     .rock h2 {
+    .rock h2 {
         font-size: 18px;
-     }
+    }
 
     .rock-images {
         display: flex;
@@ -241,30 +192,11 @@ tr:hover {
         margin-bottom: 10px;
     }
 
-    .rock-images img:first-child{
-        animation-name: Left;
-    }
-    .rock-images img:nth-child(2) {
-        animation-name: Right;
-    }
-    
-    .rock-images img:nth-child(3) {
-        animation-name: Bottom;
-    }
-    
-    .rock-images img:hover {
-        transform: scale(1.05);
+    .rock-info {
+        width: 100%;
+        margin: 0;
     }
 
-    .marq {
-        font-size: 14px;
-        line-height: 1.5;
-        width: 280px;
-    }
-
-    .rock-info{
-        width: 280px;;
-    }
     .rock-info h2 {
         font-size: 18px;
         margin-bottom: 10px;
@@ -279,9 +211,16 @@ tr:hover {
         font-size: 14px;
     }
 
-    .tables-container{
-        display: flex;
-        flex-direction: column;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        font-size: 14px;
+        text-align: center;
     }
 
     .map-container {
