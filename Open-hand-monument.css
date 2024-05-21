@@ -113,6 +113,34 @@ nav a:hover {
     animation-duration: 3s;
 }
 
+@keyframes Left {
+    0% {
+        transform: translate(-150%);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes Right {
+    0% {
+        transform: translate(150%);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.hand-images img:first-child {
+    animation-name: Left;
+}
+
+.hand-images img:last-child {
+    animation-name: Right;
+}
+
 .hand-images img:hover {
     transform: scale(1.05);
 }
