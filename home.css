@@ -121,6 +121,13 @@ nav a:hover {
     color: #3b5998;
     font-size: 24px;
     font-weight: bold;
+    animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
 
 .chandigarh p {
